@@ -41,7 +41,7 @@ exports.getStats = async (req, res) => {
       FROM game JOIN venue ON game.venue_id = venue.id
       ${includeWeather ? 'JOIN weather ON game.weather_id = weather.id' : ''}
       
-      WHERE venue.name = :stadium
+      WHERE venue.name like :stadium
       ${includeWeather ?
       `AND
         (CASE WHEN :temp < 50 THEN weather.temp < 50
@@ -54,7 +54,7 @@ exports.getStats = async (req, res) => {
       ;`,
       {
         replacements: {
-          stadium: game.stadium,
+          stadium: `%${game.stadium}%`,
           temp: game.temp,
           dewpoint: game.dew_point,
           humidity: game.humidity,
