@@ -48,7 +48,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: true,
       },
       temp: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.FLOAT,
         allowNull: true,
       },
       precip: {

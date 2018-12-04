@@ -53,7 +53,8 @@ async function importCSV () {
            precip = IF(@l = '', NULL, @l),
            humidity = IF(@m = '', NULL, @m),
            dew_point = IF(@n = '', NULL, @n),
-           wind = IF(@o = '', NULL, @o)
+           wind = IF(@o = '', NULL, @o),
+           date = IF(@date = '', NULL, @date)
            ;
        `
       );
