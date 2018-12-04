@@ -5,8 +5,8 @@ const models = require('../models');
 
 async function importCSV () {
 
-  const url = 'https://rotogrinders.com/weather/mlb.csv';
-  const csvPath = '/tmp/mlb.csv';
+  const url = 'https://rotogrinders.com/weather/nfl.csv';
+  const csvPath = '/tmp/nfl.csv';
   console.log('Downloading CSV file for import');
   // axios image download with response type "stream"
   const response = await axios({
@@ -26,15 +26,15 @@ async function importCSV () {
     console.log('Starting CSV import');
     
     try {
-      await models.sequelize.query('TRUNCATE TABLE mlb;')
+      await models.sequelize.query('TRUNCATE TABLE nfl;')
     } catch (err) {
       console.log(err);
     }
     
     try {
       await models.sequelize.query(`
-        LOAD DATA LOCAL INFILE '/tmp/mlb.csv'
-        REPLACE INTO TABLE mlb
+        LOAD DATA LOCAL INFILE '/tmp/nfl.csv'
+        REPLACE INTO TABLE nfl
         FIELDS ENCLOSED BY '"' TERMINATED BY ','
         LINES TERMINATED BY '\n'
         IGNORE 1 ROWS
