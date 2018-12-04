@@ -1,0 +1,16 @@
+id,away_id,away_team,away_vegas,away_moneyline,home_id,home_team,home_vegas,home_moneyline,stadium,temp,precip,humidity,dew_point,wind
+45345,107,TEX,4.89,-120,96,BAL,4.61,105,"Oriole Park at Camden Yards",85.1,0,41,58.5,SE7
+45347,117,MIL,4.08,-115,120,PIT,3.92,101,"PNC Park",85.4,0,47,63.0,SSW6
+45349,119,PHI,4.22,-131,114,MIA,3.78,115,"Marlins Park",,,,,
+45351,103,NYY,4.58,-114,98,CLE,4.42,100,"Progressive Field",80.4,1,57,63.9,NNE6
+45356,108,TOR,4,164,95,BOS,5.5,-185,"Fenway Park",74.3,0,52,55.6,SE10
+45357,124,WAS,3.89,104,118,NYM,4.11,-119,"Citi Field",79.2,0,45,55.9,SSE12
+45344,109,ARI,4.08,109,110,ATL,4.42,-124,"Suntrust Park",83.7,22,68,71.9,ENE6
+45343,99,DET,3.24,212,115,HOU,5.26,-238,"Minute Maid Park",,,,,
+45348,106,TBR,4.33,-110,102,MIN,4.17,-105,"Target Field",81.8,1,56,64.3,N5
+45350,100,KCR,4.59,107,97,CHW,4.91,-120,"U.S. Cellular Field",89.5,0,43,64.2,SSW10
+45353,112,CIN,3.86,132,123,STL,4.64,-148,"Busch Stadium",91.8,0,48,69.3,SE8
+45355,105,SEA,5.45,133,113,COL,6.55,-148,"Coors Field",85.4,15,28,48.3,NE8
+45346,111,CHC,4.45,-127,121,SDP,4.05,112,"Petco Park",74.1,4,74,65.1,WNW9
+45352,101,LAA,3.6,136,116,LAD,4.4,-153,"Dodger Stadium",79.0,0,56,61.7,SW4
+45354,104,OAK,3.68,127,122,SFG,4.32,-143,"AT&T Park",65.5,6,72,56.1,W14

@@ -1,0 +1,30 @@
+
+:global{
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #ddd;
+  }
+  .container {
+      margin: 0 auto;
+  }
+
+  .flex-justify {
+    justify-content: space-between;
+  }
+
+  .form-error {
+    color: #9a0500;
+  }
+
+  .no-results {
+    text-align: center;
+    height: 100px;
+    font-size: 24px;
+  }
+}

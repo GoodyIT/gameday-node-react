@@ -1,0 +1,76 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/lib/node_modules/yarn/bin/yarn.js run loadWeatherDataFromCSV
+
+PATH: 
+  /Users/adamgroves/.fastlane/bin:/Users/adamgroves/google-cloud-sdk/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/adamgroves/.yarn/bin:/Users/adamgroves/.config/yarn/global/node_modules/.bin:/usr/local/bin:/Users/adamgroves/projects/ua/ua-ci/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.11.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "rotogrinders",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+      "@zeit/next-css": "^0.1.5",
+      "@zeit/next-sass": "^0.1.2",
+      "axios": "^0.18.0",
+      "babel-cli": "^6.26.0",
+      "basscss": "^8.0.4",
+      "bluebird": "^3.5.1",
+      "body-parser": "^1.18.2",
+      "classnames": "^2.2.5",
+      "cron": "^1.3.0",
+      "csv": "^3.1.0",
+      "dotenv": "^5.0.1",
+      "express": "^4.16.3",
+      "flexboxgrid": "^6.3.1",
+      "formik": "^0.11.11",
+      "loaders.css": "^0.1.2",
+      "mysql": "^2.15.0",
+      "mysql2": "^1.5.3",
+      "next": "^5.1.0",
+      "node-sass": "^4.9.0",
+      "nodemon": "^1.17.3",
+      "react": "^16.3.2",
+      "react-autocomplete": "^1.8.1",
+      "react-datetime": "^2.14.0",
+      "react-dom": "^16.3.2",
+      "react-loaders": "^3.0.1",
+      "react-map-gl": "^3.2.7",
+      "react-vis": "^1.9.2",
+      "sequelize": "^4.37.6"
+    },
+    "scripts": {
+      "build": "next build",
+      "dev": "NODE_ENV=development pm2 start server/index.js",
+      "start": "NODE_ENV=production pm2 start server/index.js -i 0",
+      "loadWeatherDataFromCSV": "NODE_ENV=development babel-node scripts/loadWeatherDataFromCSV.js",
+    },
+    "devDependencies": {
+      "babel-preset-stage-0": "^6.24.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/adamgroves/projects/gameday/package.json: Unexpected token } in JSON at position 1150
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>

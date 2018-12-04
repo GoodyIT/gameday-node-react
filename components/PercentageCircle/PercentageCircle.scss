@@ -1,0 +1,44 @@
+.circle{
+  overflow: hidden;
+  position: relative;
+  background-color:#e3e3e3;
+  margin: 12px auto 24px;
+}
+.leftWrap{
+  overflow: hidden;
+  position: absolute;
+  top:0;
+}
+.rightWrap {
+  overflow: hidden;
+  position: absolute;
+  top:0;
+}
+
+.loader{
+  position:absolute;
+  left:0;
+  top:0;
+  border-radius:1000px;
+  transform-origin: 0 50%;
+}
+.loader2{
+  position:absolute;
+  left:0;
+  top:0;
+  border-radius: 1000px;
+  transform-origin: 100% 50%;
+}
+
+.innerCircle {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle .text {
+  font-size: 11px;
+  color: #888;
+}
