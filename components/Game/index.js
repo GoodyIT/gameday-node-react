@@ -123,8 +123,8 @@ class Game extends Component {
                         <span className="label">mph</span>
                       </span>
                     </div>
-                    {data.temp > 85 && <span className={classnames(s.fire, 'center block icn-fire')} />}
-                    {data.windSpeed > 15 && <span className={classnames(s.wind, 'center block icn-wind')} />}
+                    {/* {data.temp > 85 && <span className={classnames(s.fire, 'center block icn-fire')} />}
+                    {data.windSpeed > 15 && <span className={classnames(s.wind, 'center block icn-wind')} />} */}
                   </div>
                   <div className="table forecast">
                     <PercentageSection data={data.stats} isExpanded={this.state.isExpanded}/>
