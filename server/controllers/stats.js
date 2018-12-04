@@ -2,7 +2,7 @@ const Promise = require('bluebird');
 const get = require('lodash/get');
 const models = require('../../models');
 const { teamLookup, getRelativeWindDirection } = require('../../utils');
-const moment = require('moment');
+const moment = require('moment-timezone');
 
 exports.getStats = async (req, res) => {
   const startTime = new Date();
@@ -108,7 +108,7 @@ exports.getStats = async (req, res) => {
         results.push({
           id: game.id,
           count: data.count || 0,
-          date: moment(game.date).format("HH:mm A"),
+          date: moment(game.date).utc().format("HH:mm A"),
           home_short: game.home_team,
           home_location: home.location,
           home_mascot: home.mascot,

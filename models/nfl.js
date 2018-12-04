@@ -8,6 +8,9 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
         autoIncrement: true,
       },
+      date: {
+        type: DataTypes.DATE,
+      },
       away_id: {
         type: DataTypes.INTEGER,
         allowNull: true,
