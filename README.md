@@ -1,6 +1,6 @@
 # gameday
 
-##spec
+## spec
 
 - Next.js
 - React
