@@ -10,7 +10,7 @@ const extractCSSPlugin = new ExtractTextPlugin({
 });
 
 module.exports = {
-  assetPrefix: dev ? '/' : '/gameday/',
+  assetPrefix: dev ? '/' : '/nfl/gameday/',
   webpack(config, { dev }) {
     config.plugins.push(extractCSSPlugin);
     config.plugins.push(
