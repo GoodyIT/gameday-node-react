@@ -42,7 +42,7 @@
     "build": "next build",
     "dev": "cross-env NODE_ENV=development node --inspect server/index.js",
     "start": "cross-env NODE_ENV=production pm2 start server/index.js -i 0 --name nflgameday",
-    "loadWeatherDataFromCSV": "cross-env NODE_ENV=production pm2 start scripts/loadWeatherDataFromCSV.js --name gameday-table-cron -i 1",
+    "loadWeatherDataFromCSV": "cross-env NODE_ENV=production pm2 start scripts/loadWeatherDataFromCSV.js --name nflgameday-table-cron -i 1",
     "loadWeatherDataFromCSV:dev": "cross-env NODE_ENV=development node scripts/loadWeatherDataFromCSV.js"
   },
   "devDependencies": {
