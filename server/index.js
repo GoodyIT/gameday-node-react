@@ -22,9 +22,9 @@ app.prepare().then(() => {
   
   /* eslint-disable no-console */
   models.sequelize.sync().then(() => {
-    server.listen(8081, (err) => {
+    server.listen(8089, (err) => {
       if (err) throw err;
-      console.log('Server ready on http://localhost:8081');
+      console.log('Server ready on http://localhost:8089');
     });
   });
 });

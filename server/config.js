@@ -9,7 +9,7 @@ if (process.env.BROWSER) {
 module.exports = {
   // Node.js app
   host: process.env.HOST || 'localhost',
-  port: 8081,
+  port: 8089,
 
   // API Gateway
   api: {
@@ -18,7 +18,7 @@ module.exports = {
     // API URL to be used in the server-side code
     serverUrl:
       process.env.API_SERVER_URL ||
-      `http://localhost:${8081}`,
+      `http://localhost:${8089}`,
   },
 
   // Database
