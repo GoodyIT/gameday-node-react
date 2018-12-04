@@ -9,7 +9,6 @@ class PercentageCircleSummary extends Component {
   
   render() {
     const { data, adjustedValue, stat, index } = this.props;
-    console.log(data)
     return (
       <div
         className={classnames(s.wrapper, 'col-xs-12 col-md-4')}

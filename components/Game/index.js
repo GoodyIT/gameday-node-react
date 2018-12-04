@@ -88,6 +88,7 @@ class Game extends Component {
             <span className="meta">
               <span className="time">
                 {/*<span>1:10 PM ET</span> at Great American Ball Park*/}
+                <span>{data.date} ET</span>&nbsp;AT&nbsp; {data.stadium}
               </span>
               <span className="overunder">
                 {/*<span>9.5</span> o/u*/}
