@@ -108,7 +108,7 @@ exports.getStats = async (req, res) => {
         results.push({
           id: game.id,
           count: data.count || 0,
-          date: moment(game.date).utc().format("HH:mm A"),
+          date: moment.tz(game.date, "America/New_York").format("hh:mm A"),
           home_short: game.home_team,
           home_location: home.location,
           home_mascot: home.mascot,
