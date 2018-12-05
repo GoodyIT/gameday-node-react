@@ -113,7 +113,7 @@ class Game extends Component {
                       </span>
                     </div>
                     <div className='mb-2'>
-                      {this.renderWindDirection()}
+                      {/* {this.renderWindDirection()} */}
                       <span className="display">
                         <span className="value">{data.windDirection}</span>
                         <span className="label">Dir</span>
