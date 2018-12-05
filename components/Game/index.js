@@ -58,7 +58,8 @@ class Game extends Component {
     const windDirection = get(data, 'windDirection', '');
     const windSpeed = get(data, 'windSpeed', '');
     const size = windSpeed > 10 ? '-lrg' : '';
-    return <span className={`display icn-wind-${windDirection}${size}`}></span>
+    // return <span className={`display icn-wind-${windDirection}${size}`}></span>
+    return <span class="display" style={{ height: '47px'}}></span>
   }
 
   render() {
@@ -113,7 +114,7 @@ class Game extends Component {
                       </span>
                     </div>
                     <div className='mb-2'>
-                      {/* {this.renderWindDirection()} */}
+                      {this.renderWindDirection()}
                       <span className="display">
                         <span className="value">{data.windDirection}</span>
                         <span className="label">Dir</span>
