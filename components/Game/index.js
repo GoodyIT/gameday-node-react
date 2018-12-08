@@ -102,19 +102,14 @@ class Game extends Component {
                 <div className="blk forecast" style={{display: 'block'}}>
                   <div className="grad"></div>
                   <div className="blk current-forecast">
-                    <div>
+                    <div className={s.myForecast}>
                       {this.renderWeatherIcon()}
                       <span className="display">
                         <span className="value">{data.temp}</span>
                         <span className="label">Temp</span>
                       </span>
-                      <span className="display">
-                        <span className="value">{data.dew_point}</span>
-                        <span className="label">Dewpoint °F</span>
-                      </span>
                     </div>
-                    <div className='mb-2'>
-                      {this.renderWindDirection()}
+                    <div className={s.myForecast} style={{ display: 'flex' }}>
                       <span className="display">
                         <span className="value">{data.windDirection}</span>
                         <span className="label">Dir</span>
