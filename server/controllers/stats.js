@@ -46,7 +46,7 @@ exports.getStats = async (req, res) => {
       `AND
         (CASE WHEN :temp < 50 THEN weather.temp < 50
               WHEN :temp > 90 THEN weather.temp > 90
-              ELSE weather.temp BETWEEN :temp - 15  AND :temp + 15 
+              ELSE weather.temp BETWEEN :temp - 12  AND :temp + 12 
         END)` : ''
       }
       GROUP BY venue.id
